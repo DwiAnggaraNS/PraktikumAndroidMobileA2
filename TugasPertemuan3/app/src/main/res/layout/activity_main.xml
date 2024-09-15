@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="15dp"
+    >
+
+    <!-- Vertical Guidelines sebagai Kolom -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_column1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_column2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_column3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <!-- Horizontal Guidelines sebagai Baris -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_row1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_row2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_row3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_row4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.76" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_row5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1" />
+
+    <!-- Button Calculator -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_ac"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="AC"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toStartOf="@id/guideline_column1"
+        app:layout_constraintTop_toTopOf="@id/guideline_row1"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row2"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_percent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="%"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_column1"
+        app:layout_constraintEnd_toStartOf="@id/guideline_column2"
+        app:layout_constraintTop_toTopOf="@id/guideline_row1"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row2"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_slash"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="/"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_column2"
+        app:layout_constraintEnd_toStartOf="@id/guideline_column3"
+        app:layout_constraintTop_toTopOf="@id/guideline_row1"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row2"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_times"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="x"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_column3"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintTop_toTopOf="@id/guideline_row1"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row2"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_7"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/white"
+        android:text="7"
+        android:textColor="@color/grey"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row3"
+        app:layout_constraintEnd_toStartOf="@id/guideline_column1"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintTop_toTopOf="@id/guideline_row2"></com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="8"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_column1"
+        app:layout_constraintEnd_toStartOf="@id/guideline_column2"
+        app:layout_constraintTop_toTopOf="@id/guideline_row2"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row3"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="9"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_column2"
+        app:layout_constraintEnd_toStartOf="@id/guideline_column3"
+        app:layout_constraintTop_toTopOf="@id/guideline_row2"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row3"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_plus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="+"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_column3"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintTop_toTopOf="@id/guideline_row2"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row3"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="4"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/grey"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toStartOf="@id/guideline_column1"
+        app:layout_constraintTop_toTopOf="@id/guideline_row3"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row4"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="5"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_column1"
+        app:layout_constraintEnd_toStartOf="@id/guideline_column2"
+        app:layout_constraintTop_toTopOf="@id/guideline_row3"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row4"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="6"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="12dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_column2"
+        app:layout_constraintEnd_toStartOf="@id/guideline_column3"
+        app:layout_constraintTop_toTopOf="@id/guideline_row3"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row4"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_minus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="-"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_column3"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintTop_toTopOf="@id/guideline_row3"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row4"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="1"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/grey"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toStartOf="@id/guideline_column1"
+        app:layout_constraintTop_toTopOf="@id/guideline_row4"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row5"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="2"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_column1"
+        app:layout_constraintEnd_toStartOf="@id/guideline_column2"
+        app:layout_constraintTop_toTopOf="@id/guideline_row4"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row5"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="3"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_column2"
+        app:layout_constraintEnd_toStartOf="@id/guideline_column3"
+        app:layout_constraintTop_toTopOf="@id/guideline_row4"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row5"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_equals"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="="
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/orange"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_column3"
+        app:layout_constraintEnd_toStartOf="@id/guideline_right"
+        app:layout_constraintTop_toTopOf="@id/guideline_row4"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_0"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="0"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/grey"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintEnd_toStartOf="@id/guideline_column2"
+        app:layout_constraintTop_toTopOf="@id/guideline_row5"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_dot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="."
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:backgroundTint="@color/white"
+        app:cornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="@id/guideline_column2"
+        app:layout_constraintEnd_toStartOf="@id/guideline_column3"
+        app:layout_constraintTop_toTopOf="@id/guideline_row5"
+        app:layout_constraintBottom_toTopOf="@id/guideline_bottom"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+    </com.google.android.material.button.MaterialButton>
+
+    <View
+        android:id="@+id/lineBreaker"
+        android:layout_width="170dp"
+        android:layout_height="5dp"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintBottom_toTopOf="@id/guideline_row1"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/lineBreaker"
+        android:text="7,500"
+        android:textColor="@color/grey"
+        android:textSize="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp"
+        android:layout_marginRight="24dp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/calculation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/result"
+        android:text="15,00-7500"
+        android:textColor="@color/grey"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="24dp">
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
