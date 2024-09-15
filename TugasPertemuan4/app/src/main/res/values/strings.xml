@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TugasPertemuan4</string>
+    <string name="login">Login</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="Register">Register</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Phone</string>
+    <string name="judul">Homepage</string>
+</resources>
