@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/white">
 
     <!--Komponen Atas -->
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -183,7 +184,8 @@
                     android:layout_height="300dp"
                     android:layout_marginTop="12dp"
                     android:src="@drawable/post_fufufafa"
-                    app:layout_constraintTop_toBottomOf="@id/pp_fufufafa"/>
+                    app:layout_constraintTop_toBottomOf="@id/pp_fufufafa"
+                    android:background="@android:color/transparent"/>
                 <ImageButton
                     android:id="@+id/like_post_fff"
                     android:layout_width="wrap_content"
@@ -205,6 +207,13 @@
                     android:src="@drawable/ic_share"
                     app:layout_constraintTop_toBottomOf="@id/ffff_post"
                     app:layout_constraintStart_toEndOf="@id/comment_ffff"
+                    android:backgroundTint="@color/white"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bookmark"
+                    app:layout_constraintTop_toBottomOf="@id/ffff_post"
+                    app:layout_constraintEnd_toEndOf="parent"
                     android:backgroundTint="@color/white"/>
                 <TextView
                     android:id="@+id/likedby1"
@@ -306,6 +315,13 @@
                     app:layout_constraintTop_toBottomOf="@id/assets_post"
                     app:layout_constraintStart_toEndOf="@id/comment_assets"
                     android:backgroundTint="@color/white"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bookmark"
+                    app:layout_constraintTop_toBottomOf="@id/assets_post"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:backgroundTint="@color/white"/>
                 <TextView
                     android:id="@+id/likedby2"
                     android:layout_width="wrap_content"
@@ -405,6 +421,13 @@
                     android:src="@drawable/ic_share"
                     app:layout_constraintTop_toBottomOf="@id/liga_post"
                     app:layout_constraintStart_toEndOf="@id/comment_liga"
+                    android:backgroundTint="@color/white"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bookmark"
+                    app:layout_constraintTop_toBottomOf="@id/liga_post"
+                    app:layout_constraintEnd_toEndOf="parent"
                     android:backgroundTint="@color/white"/>
                 <TextView
                     android:id="@+id/likedby3"
