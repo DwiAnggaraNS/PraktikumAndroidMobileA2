@@ -1,0 +1,8 @@
+<!-- res/values/styles.xml -->
+<resources>
+    <!-- Text Appearance untuk teks lain -->
+    <style name="AppTheme.TextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+</resources>
