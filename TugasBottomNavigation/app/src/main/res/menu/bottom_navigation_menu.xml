@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home"
+        app:iconTint="@color/nav_item_color"
+        app:titleTextColor="@color/nav_item_color"/>
+    <item
+        android:id="@+id/mutasiFragment"
+        android:icon="@drawable/baseline_history_24"
+        android:title="Mutasi"
+        app:iconTint="@color/nav_item_color"
+        app:titleTextColor="@color/nav_item_color"/>
+    <item
+        android:id="@+id/inboxFragment"
+        android:icon="@drawable/baseline_inbox_24"
+        android:title="Inbox"
+        app:iconTint="@color/nav_item_color"
+        app:titleTextColor="@color/nav_item_color"/>
+    <item
+        android:id="@+id/userProfileFragment"
+        android:icon="@drawable/baseline_person_pin_24"
+        android:title="Profile"
+        app:iconTint="@color/nav_item_color"
+        app:titleTextColor="@color/nav_item_color"/>
+</menu>

@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Garis warna oranye -->
+    <item android:left="0dp" android:right="50dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FF7F00"/> <!-- Warna oranye -->
+            <size android:height="2dp"/> <!-- Ketebalan garis -->
+        </shape>
+    </item>
+
+    <!-- Garis warna hitam -->
+    <item android:left="50dp" android:right="0dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#000000"/> <!-- Warna hitam -->
+            <size android:height="2dp"/> <!-- Ketebalan garis -->
+        </shape>
+    </item>
+</layer-list>

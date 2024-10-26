@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TugasBottomNavigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome_message">Selamat Datang, Dwi Anggara</string>
+    <string name="profile">Profile</string>
+    <string name="about">Tentang</string>
+    <string name="bio">I am a third-semester student in the Software Engineering Technology program at Gadjah Mada University with a strong interest in the field of Data Science. I am passionate about pursuing a career in Data Science and am actively deepening my knowledge in this area. Over the course of my studies, I have diligently honed my skills in Python programming and Machine Learning. Additionally, I have taken various Data Science courses and studied statistics from numerous sources.\n\nCurrently, I am focused on participating in various Data Science competitions to sharpen my abilities and apply Data Science knowledge to real-world projects. My experiences have equipped me with the ability to adapt quickly to new environments and situations. I possess a strong curiosity that drives me to explore and learn continuously. I thrive in team settings and have excellent communication skill</string>
+</resources>
