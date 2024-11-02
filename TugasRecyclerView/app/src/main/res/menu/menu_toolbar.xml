@@ -1,0 +1,8 @@
+<!-- res/menu/menu_toolbar.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_icon"
+        android:icon="@drawable/icon_app"
+        android:title="Action"
+        android:showAsAction="ifRoom" />
+</menu>
