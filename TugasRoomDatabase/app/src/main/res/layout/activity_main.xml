@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_kpu"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Apps ini di gunakan oleh petugas KPU untuk mendata peserta pemilu"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:startIconTint="@color/darkGrey"
+        android:elevation="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            app:hintTextColor="@color/darkGrey"
+            android:paddingStart="48dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/rounded_background"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:startIconTint="@color/darkGrey"
+        android:elevation="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:hintTextColor="@color/darkGrey"
+            android:paddingStart="48dp"
+            android:paddingEnd="16dp"
+            android:background="@drawable/rounded_background"
+            android:inputType="textPassword"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rounded_blue_background"
+        android:onClick="submitbuttonHandler"
+        android:text="Login"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        />
+
+
+</LinearLayout>
